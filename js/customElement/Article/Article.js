@@ -1,6 +1,8 @@
 // Autonomous custom elements
 // Shadow DOM not applied
 // 접근성을 위해 사용시 aria role 이용: Page.js 참고
+import articleHTML from "./articleHTML.js";
+import createTemplate from "../createTemplate.js";
 
 class Article extends HTMLElement {
   constructor() {
@@ -13,17 +15,8 @@ class Article extends HTMLElement {
 
   render() {
     const toggleContent = this.getAttribute("content");
-
-    this.innerHTML = `
-      <form class="toggle-form">
-        <input>
-        <button type="submit">토글 내용 변경</button>
-      </form>
-      <button class="toggle">토글</button>
-      <div class="toggle-area" style="display:none;">
-        <p class="content-area">${toggleContent}</p>
-      </div>
-    `;
+    const templateContent = createTemplate(articleHTML(toggleContent));
+    this.appendChild(templateContent);
   }
 
   connectedCallback() {

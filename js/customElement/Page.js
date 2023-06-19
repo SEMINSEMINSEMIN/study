@@ -1,5 +1,5 @@
 import "./MyList.js";
-import "./Article.js";
+import "./Article/Article.js";
 import "./ShadowOpen.js";
 import "./ShadowClose.js";
 
