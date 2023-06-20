@@ -12,7 +12,10 @@ class Page {
     this.renderTarget.innerHTML = `
       <ul is="my-list"></ul>
       <toggle-article role="article" content="Hello World"></toggle-article>
-      <shadow-open></shadow-open>
+      <shadow-open>
+        <li slot="list1">slot 1</li>
+        <li slot="list2">slot 2</li>
+      </shadow-open>
       <shadow-close></shadow-close>
     `;
 

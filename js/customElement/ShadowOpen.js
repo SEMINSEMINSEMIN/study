@@ -9,6 +9,10 @@ class ShadowOpen extends HTMLElement {
         }
       </style>
       <button>ShadowOpenBtn</button>
+      <ul>
+        <slot name="list1"></slot>
+        <slot name="list2"></slot>
+      </ul>
     `;
   }
 }
