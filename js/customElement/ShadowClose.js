@@ -27,6 +27,7 @@ class ShadowClose extends HTMLElement {
   connectedCallback() {
     const $btn = this.#shadowRoot.querySelector("button");
     $btn.textContent = "ShadowCloseBtn";
+    $btn.addEventListener("click", () => console.log("button clicked"));
   }
 }
 
