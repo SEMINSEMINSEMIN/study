@@ -1,11 +1,11 @@
 import './style.css'
 // Glob import
-// const modules = import.meta.glob("./components/*.js"); 
+const modules = import.meta.glob("./components/*.js"); 
 
-// for (const path in modules) {
-//   modules[path]();
-// }
+for (const path in modules) {
+  modules[path]();
+}
 
 // dynamic import
-await import("./components/counter.js");
-await import("./components/navigation.js");
+// await import("./components/counter.js");
+// await import("./components/navigation.js");

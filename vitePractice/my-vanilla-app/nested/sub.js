@@ -1,0 +1,1 @@
+document.querySelector('#subParagraph').style.backgroundColor = "red";

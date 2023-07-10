@@ -2,9 +2,9 @@ import styles from "./navigation.module.css";
 import { debounce } from "lodash";
 
 document.querySelector('#app').innerHTML += `
-    <div class="${styles.card}">
-        This is navigation bar
-    </div>
+    <nav class="${styles.card}">
+        <a href="./nested/">Navigate to nested Page</a>
+    </nav>
 `;
 
 debounce(() => console.log("dkdkdk"), 100)();
