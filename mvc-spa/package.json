@@ -1,0 +1,30 @@
+{
+    "name": "mvc-spa",
+    "version": "0.1.0",
+    "description": "SPA application with Vanilla JavaScript and MVC pattern",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "css-loader": "^7.1.2",
+        "ejs": "^3.1.10",
+        "html-loader": "^5.0.0",
+        "html-webpack-plugin": "^5.6.0",
+        "postcss-loader": "^8.1.1",
+        "sass": "^1.77.8",
+        "sass-loader": "^14.2.1",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.93.0",
+        "webpack-merge": "^6.0.1"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3"
+    }
+}
