@@ -1,8 +1,9 @@
+import { main } from "./main";
+
 (function () {
     class App {
         init = () => {
-            const $appRoot = document.getElementById("app-root");
-            $appRoot.textContent = "Hello World";
+            main();
         };
     }
 
