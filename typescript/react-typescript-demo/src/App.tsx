@@ -32,9 +32,9 @@ function App() {
 
     return (
         <div className="App">
-            <Container
+            {/* <Container
                 styles={{ border: "1px solid black", padding: "1rem" }}
-            />
+            /> */}
             {/* <Button
                 handleClick={(event, id) => {
                     console.log("Button Clicked", event);

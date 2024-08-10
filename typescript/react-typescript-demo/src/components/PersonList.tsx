@@ -1,9 +1,8 @@
+import { Name } from "../types/data/index.types";
+
 // Type for An array with objects
 type PersonListProps = {
-    names: {
-        first: string;
-        last: string;
-    }[];
+    names: Name[];
 };
 
 export const PersonList = (props: PersonListProps) => {
