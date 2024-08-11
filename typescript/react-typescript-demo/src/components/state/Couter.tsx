@@ -4,10 +4,19 @@ type CounterState = {
     count: number;
 };
 
-type CounterAction = {
-    type: string;
+// payload가 필수
+type UpdateAction = {
+    type: "increment" | "decrement";
     payload: number;
 };
+
+// payload가 비필수
+type ResetAction = {
+    type: "reset";
+};
+
+// payload가 optional
+type CounterAction = UpdateAction | ResetAction;
 
 const initialState = { count: 0 };
 
@@ -17,6 +26,8 @@ function reducer(state: CounterState, action: CounterAction) {
             return { count: state.count + action.payload };
         case "decrement":
             return { count: state.count - action.payload };
+        case "reset":
+            return initialState;
         default:
             return state;
     }
@@ -37,6 +48,7 @@ export const Counter = () => {
             >
                 Decrement 10
             </button>
+            <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
         </>
     );
 };
