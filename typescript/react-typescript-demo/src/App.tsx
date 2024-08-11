@@ -42,12 +42,12 @@ function App() {
 
     return (
         <div className="App">
-            <CustomButton
+            {/* <CustomButton
                 variant="primary"
                 onClick={() => console.log("Clicked")}
             >
                 Primary Button
-            </CustomButton>
+            </CustomButton> */}
             {/* <Toast position="center" /> */}
             {/* <RandomNumber value={10} isPositive />
             <RandomNumber value={-10} isNegative />
