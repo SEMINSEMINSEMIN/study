@@ -10,6 +10,8 @@ import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { Box } from "./components/context/Box";
+import { User } from "./components/context/User";
+import { UserContextProvider } from "./components/context/UserContext";
 
 function App() {
     const personName = {
@@ -34,9 +36,12 @@ function App() {
 
     return (
         <div className="App">
-            <ThemeContextProvider>
+            <UserContextProvider>
+                <User />
+            </UserContextProvider>
+            {/* <ThemeContextProvider>
                 <Box />
-            </ThemeContextProvider>
+            </ThemeContextProvider> */}
             {/* <Container
                 styles={{ border: "1px solid black", padding: "1rem" }}
             /> */}
