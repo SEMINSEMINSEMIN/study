@@ -93,3 +93,13 @@ let textBox: UIWidget = {
     drag: () => {},
     resize: () => {},
 };
+
+// Literal Types
+type Qunatity = 50 | 100;
+let quantity: Qunatity;
+// quantity = 51; // 오류
+quantity = 50;
+quantity = 100;
+
+type Metric = "cm" | "inch";
+let metric: Metric = "cm";
