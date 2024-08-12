@@ -47,12 +47,15 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(10000, 2022);
 calculateTax(10000);
 
-// Objects
-let employee: {
+// Type Aliases
+type Employee = {
     readonly id: number;
     name: string;
     retire: (date: Date) => void;
-} = {
+};
+
+// Objects
+let employee: Employee = {
     id: 1,
     name: "Semin",
     retire: (date: Date) => {
