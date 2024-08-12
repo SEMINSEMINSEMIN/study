@@ -103,3 +103,11 @@ quantity = 100;
 
 type Metric = "cm" | "inch";
 let metric: Metric = "cm";
+
+// Nullable Types
+function greet(name: string | null | undefined) {
+    if (name) console.log(name.toUpperCase());
+    else console.log("Hola!");
+}
+
+greet(null);
