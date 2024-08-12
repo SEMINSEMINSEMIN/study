@@ -9,3 +9,7 @@ let level;
 function render(document: any) {
     console.log(document);
 }
+
+// Arrays
+let numbers: number[] = [];
+numbers.forEach((n) => n.toString());
