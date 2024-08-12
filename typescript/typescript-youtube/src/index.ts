@@ -13,3 +13,6 @@ function render(document: any) {
 // Arrays
 let numbers: number[] = [];
 numbers.forEach((n) => n.toString());
+
+// Tuples
+let user: [number, string] = [1, "Mosh"];
