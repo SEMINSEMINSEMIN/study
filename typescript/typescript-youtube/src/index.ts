@@ -31,3 +31,18 @@ const enum Size {
 } // PascalCase
 let mySize: Size = Size.Medium;
 console.log(mySize); // 2
+
+// Functions
+//// function name(param: paramType):returnType
+//// 파라미터에 default값을 부여하면, 해당 파라미터는 optional이 된다.
+function calculateTax(income: number, taxYear = 2022): number {
+    // let x;
+
+    if (taxYear < 2022) {
+        return income * 1.2;
+    } else {
+        return income * 1.3;
+    }
+}
+calculateTax(10000, 2022);
+calculateTax(10000);
