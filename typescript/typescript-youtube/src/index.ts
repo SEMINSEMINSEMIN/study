@@ -46,3 +46,18 @@ function calculateTax(income: number, taxYear = 2022): number {
 }
 calculateTax(10000, 2022);
 calculateTax(10000);
+
+// Objects
+let employee: {
+    readonly id: number;
+    name: string;
+    retire: (date: Date) => void;
+} = {
+    id: 1,
+    name: "Semin",
+    retire: (date: Date) => {
+        console.log(date);
+    },
+};
+// readonly property는 수정 불가능
+// employee.id = 2;
