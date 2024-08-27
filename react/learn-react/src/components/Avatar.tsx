@@ -1,5 +1,5 @@
 type AvatarProps = {
-    imgPath: string;
+    imgPath?: string;
     avatarName?: string;
 };
 

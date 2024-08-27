@@ -1,5 +1,6 @@
 import React from "react";
 import Utils from "../Utils";
+import { TodoItem } from "./TodoItem";
 
 export const TodoList = () => {
     const today = new Date();
@@ -14,9 +15,9 @@ export const TodoList = () => {
                     color: "pink",
                 }}
             >
-                <li>잠자기</li>
-                <li>밥먹기</li>
-                <li>닌텐도 하기</li>
+                <TodoItem todoName="잠자기" />
+                <TodoItem todoName="밥먹기" isFinish={true} />
+                <TodoItem todoName="닌텐도 하기" />
             </ul>
         </section>
     );
