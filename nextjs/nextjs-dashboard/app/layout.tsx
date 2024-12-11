@@ -1,6 +1,12 @@
 import "@/app/ui/global.css";
 import { inter } from "@/app/ui/fonts";
 
+// root layout: ui added to the root layout will be shared across all pages
+/**
+ * 사용 에시
+ * html, body, 메타 태그
+ */
+
 export default function RootLayout({
     children,
 }: {
